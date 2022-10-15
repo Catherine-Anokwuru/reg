@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Registration</h1>
+        <form action="login.html" method="POST">
+            <div class="user-details">
+                <div class="reg">
+                    <label for="fname">Firstname:</label><br>
+                    <input type="text" name="fname" placeholder="Enter first name" id="fname" required>
+                </div>
+
+                <div class="reg">
+                    <label for="lname">Lastname:</label><br>
+                    <input type="text" name="lname" placeholder="Enter last name" id="lname" required>
+                </div>
+
+                <div class="reg">
+                    <label for="pnum">Phone No:</label><br>
+                    <input type="tel" name="pnum" id="pnum" placeholder="123-45-678-90" required>
+                </div>
+
+                <div class="reg">
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" name="email" placeholder="Enter your email" id="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+
+                <div class="reg">
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" name="dob" id="dob"  required>
+                </div>
+
+                <div class="reg">
+                    <label for="gender"> Gender:</label><br>
+                    <select name="gender" required>
+                        <option id="syg" value="" selected hidden>--Select your gender--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+
+                <div class="reg">
+                    <label for="fav-color">Favorite Color:</label><br>
+                    <input type="color" name="fav-color" id="fav-color" required>
+                </div>
+            </div>
+
+            <div class="submit-btn">
+              <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
